@@ -1250,107 +1250,117 @@ main > article {
       font-family: 'Source Code Pro', monospace; }
       /* line 290, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
       main > article .footnotes li p {
-        font-family: Cabin, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+        font-family: Cabin, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+        word-wrap: break-word; }
+  /* line 298, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .references p {
+    font-size: 0.9em; }
+    /* line 301, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .references p a {
+      word-wrap: break-word; }
 
-/* line 301, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields .toggle-data {
-  display: none; }
-  /* line 304, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-  .js .what-do-they-pay .comparison-of-data-fields .toggle-data {
-    border: solid 2px #ddd;
-    text-transform: uppercase;
-    font-size: 0.7em;
-    color: #252021;
-    padding: 0.375em 1.5em 0.375em 3.5em;
-    position: relative;
-    cursor: pointer; }
-    @media (min-width: 40em) {
-      /* line 304, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-      .js .what-do-they-pay .comparison-of-data-fields .toggle-data {
-        float: right; } }
-    /* line 317, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-    .js .what-do-they-pay .comparison-of-data-fields .toggle-data:before {
-      content: '';
-      background-color: #ddd;
-      display: block;
-      width: 2em;
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0; }
-    /* line 328, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-    .js .what-do-they-pay .comparison-of-data-fields .toggle-data.off {
-      border-color: #006498;
-      padding: 0.375em 3.5em 0.375em 1.5em; }
-      /* line 332, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-      .js .what-do-they-pay .comparison-of-data-fields .toggle-data.off:before {
-        background-color: #006498;
-        left: auto;
-        right: 0; }
-    /* line 339, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-    .js .what-do-they-pay .comparison-of-data-fields .toggle-data.active {
-      display: block; }
-/* line 346, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table tbody th {
-  width: 28%; }
-/* line 349, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table tbody td {
-  width: 12%;
-  text-align: center;
-  background-color: #d93621;
-  line-height: 1.2;
-  height: 4.5em;
-  padding-top: 0.375em;
-  padding-bottom: 0.375em; }
+/* line 309, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay {
+  overflow-x: auto; }
+  /* line 313, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields .toggle-data {
+    display: none; }
+    /* line 316, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .js .what-do-they-pay .comparison-of-data-fields .toggle-data {
+      border: solid 2px #ddd;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      color: #252021;
+      padding: 0.375em 1.5em 0.375em 3.5em;
+      position: relative;
+      cursor: pointer; }
+      @media (min-width: 40em) {
+        /* line 316, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+        .js .what-do-they-pay .comparison-of-data-fields .toggle-data {
+          float: right; } }
+      /* line 329, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      .js .what-do-they-pay .comparison-of-data-fields .toggle-data:before {
+        content: '';
+        background-color: #ddd;
+        display: block;
+        width: 2em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0; }
+      /* line 340, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      .js .what-do-they-pay .comparison-of-data-fields .toggle-data.off {
+        border-color: #006498;
+        padding: 0.375em 3.5em 0.375em 1.5em; }
+        /* line 344, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+        .js .what-do-they-pay .comparison-of-data-fields .toggle-data.off:before {
+          background-color: #006498;
+          left: auto;
+          right: 0; }
+      /* line 351, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      .js .what-do-they-pay .comparison-of-data-fields .toggle-data.active {
+        display: block; }
   /* line 358, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-  .what-do-they-pay .comparison-of-data-fields table tbody td.ideal {
+  .what-do-they-pay .comparison-of-data-fields table tbody th {
+    width: 28%; }
+  /* line 361, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table tbody td {
+    width: 12%;
+    text-align: center;
+    background-color: #d93621;
+    line-height: 1.2;
+    height: 4.5em;
+    padding-top: 0.375em;
+    padding-bottom: 0.375em; }
+    /* line 370, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .what-do-they-pay .comparison-of-data-fields table tbody td.ideal {
+      background-color: inherit; }
+      /* line 372, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      .what-do-they-pay .comparison-of-data-fields table tbody td.ideal svg {
+        fill: #527f48; }
+    /* line 377, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .what-do-they-pay .comparison-of-data-fields table tbody td.related {
+      background-color: inherit; }
+      /* line 379, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      .what-do-they-pay .comparison-of-data-fields table tbody td.related svg {
+        fill: #F6CD11; }
+  /* line 385, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table tbody svg {
+    width: 32px;
+    height: 32px;
+    fill: #fff;
+    padding-top: 0.3em; }
+  /* line 392, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table tbody span {
+    display: none;
+    font-size: 0.8em; }
+  /* line 402, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table.detailed .ideal svg,
+  .what-do-they-pay .comparison-of-data-fields table.detailed .related svg,
+  .what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal svg,
+  .what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related svg {
+    display: none; }
+  /* line 405, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table.detailed .ideal span,
+  .what-do-they-pay .comparison-of-data-fields table.detailed .related span,
+  .what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal span,
+  .what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related span {
+    display: block; }
+  /* line 409, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table.detailed .ideal,
+  .what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal {
+    background: #527f48;
+    color: #fff; }
+  /* line 413, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table.detailed .related,
+  .what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related {
+    background: #F6CD11; }
+  /* line 418, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table tbody tr:hover th {
+    background-color: #ddd; }
+  /* line 423, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table.detailed tbody tr:hover th {
     background-color: inherit; }
-    /* line 360, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-    .what-do-they-pay .comparison-of-data-fields table tbody td.ideal svg {
-      fill: #527f48; }
-  /* line 365, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-  .what-do-they-pay .comparison-of-data-fields table tbody td.related {
-    background-color: inherit; }
-    /* line 367, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-    .what-do-they-pay .comparison-of-data-fields table tbody td.related svg {
-      fill: #F6CD11; }
-/* line 373, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table tbody svg {
-  width: 32px;
-  height: 32px;
-  fill: #fff;
-  padding-top: 0.3em; }
-/* line 380, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table tbody span {
-  display: none;
-  font-size: 0.8em; }
-/* line 390, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table.detailed .ideal svg,
-.what-do-they-pay .comparison-of-data-fields table.detailed .related svg,
-.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal svg,
-.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related svg {
-  display: none; }
-/* line 393, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table.detailed .ideal span,
-.what-do-they-pay .comparison-of-data-fields table.detailed .related span,
-.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal span,
-.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related span {
-  display: block; }
-/* line 397, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table.detailed .ideal,
-.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal {
-  background: #527f48;
-  color: #fff; }
-/* line 401, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table.detailed .related,
-.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related {
-  background: #F6CD11; }
-/* line 406, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table tbody tr:hover th {
-  background-color: #ddd; }
-/* line 411, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
-.what-do-they-pay .comparison-of-data-fields table.detailed tbody tr:hover th {
-  background-color: inherit; }
 
 /* footer */
 /* line 7, /Users/sam/www/okfn/datafortaxjustice/source/css/_ok-footer.scss */
