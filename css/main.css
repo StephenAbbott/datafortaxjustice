@@ -624,27 +624,42 @@ table {
   -ms-font-feature-settings: "kern", "liga", "tnum";
   font-feature-settings: "kern", "liga", "tnum";
   border-collapse: collapse;
-  margin: 0.75em 0;
-  table-layout: fixed;
+  margin: 0.75em 0 1.5em 0;
   width: 100%; }
 
-/* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
-th {
-  border-bottom: 1px solid #b7b7b7;
-  font-weight: 600;
-  padding: 0.75em 0;
-  text-align: left; }
-
-/* line 16, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
+/* line 8, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
+th,
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; }
+  padding: 0.75em;
+  border-right: 1px solid #ddd;
+  font-size: 0.9em; }
+  /* line 15, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
+  th:last-child,
+  td:last-child {
+    border-right: none; }
 
-/* line 21, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
+/* line 20, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
+th {
+  font-weight: 600;
+  text-align: left; }
+
+/* line 25, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
 tr,
 td,
 th {
   vertical-align: middle; }
+
+/* line 32, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
+thead th {
+  border-color: #252021;
+  background-color: #252021;
+  color: #fff; }
+
+/* line 42, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_tables.scss */
+tbody th:empty,
+tbody td:empty {
+  border-bottom: none; }
 
 /* line 1, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_typography.scss */
 body {
@@ -664,7 +679,7 @@ h6 {
   font-family: Cabin, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0.75em 0 0.375em 0; }
 
 /* line 22, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_typography.scss */
 p {
@@ -696,6 +711,16 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+/* line 57, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_typography.scss */
+sub,
+sup {
+  font-size: 60%;
+  font-family: 'Source Code Pro', monospace; }
+
+/* line 63, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_typography.scss */
+blockquote {
+  font-style: italic; }
+
 /* line 4, /Users/sam/www/okfn/datafortaxjustice/source/css/neat/grid/_box-sizing.scss */
 html {
   -webkit-box-sizing: border-box;
@@ -723,10 +748,609 @@ html {
       position: absolute;
       right: 0;
       background-color: transparent; } }
+
+@media (min-width: 53.75em) {
+  /* line 18, /Users/sam/www/okfn/datafortaxjustice/source/css/_ok-ribbon.scss */
+  .banner #ok-panel-wrapper:not([data-breakpoint*='px']) > .ok-ribbon {
+    margin-top: -3em; } }
+
+/* line 1, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+html {
+  overflow-x: hidden; }
+
+/* line 6, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+body > header {
+  background-color: #d93621;
+  color: #fff;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+  /* line 12, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+  body > header a {
+    color: inherit; }
+  /* line 17, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+  body > header > section {
+    max-width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+    /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
+    body > header > section::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media (min-width: 53.75em) {
+      /* line 17, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > header > section {
+        background-image: url(../img/man.svg);
+        background-repeat: no-repeat;
+        background-size: 31.7616% auto;
+        background-position: 1.5em 140px; } }
+    /* line 27, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+    body > header > section .hashtag {
+      padding: 0 1.5em;
+      font-family: 'Source Code Pro', monospace; }
+      /* line 31, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > header > section .hashtag a {
+        color: #252021;
+        background-color: #fff;
+        padding: 0.6em 0.75em;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 20px; }
+      /* line 40, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > header > section .hashtag svg {
+        display: none; }
+    /* line 47, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+    body > header > section .intro {
+      padding: 1.5em; }
+      /* line 50, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > header > section .intro h1 {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 0.2em; }
+      /* line 56, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > header > section .intro > a {
+        background-color: #252021;
+        text-transform: uppercase; }
+      @media (min-width: 53.75em) {
+        /* line 47, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+        body > header > section .intro {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 65.88078%;
+          height: 380px;
+          display: table; }
+          /* line 87, /Users/sam/www/okfn/datafortaxjustice/source/css/neat/grid/_span-columns.scss */
+          body > header > section .intro:last-child {
+            margin-right: 0; }
+          /* line 67, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > header > section .intro > div {
+            display: table-cell;
+            vertical-align: middle; }
+          /* line 72, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > header > section .intro p {
+            font-size: 1.2em; }
+          /* line 76, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > header > section .intro > a {
+            font-size: 1.2em;
+            margin-top: 0.8em; } }
+      @media (min-width: 53.75em) {
+        /* line 47, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+        body > header > section .intro {
+          padding-left: 3em; } }
+  /* line 88, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+  body > header.banner {
+    padding-bottom: 0; }
+    @media (min-width: 53.75em) {
+      /* line 88, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > header.banner {
+        padding-top: 3em; }
+        /* line 94, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+        body > header.banner .hashtag {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          padding: 0;
+          position: relative;
+          left: 1.5em; }
+          /* line 87, /Users/sam/www/okfn/datafortaxjustice/source/css/neat/grid/_span-columns.scss */
+          body > header.banner .hashtag:last-child {
+            margin-right: 0; }
+          /* line 100, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > header.banner .hashtag a {
+            display: block;
+            text-align: center;
+            padding: 0 10px;
+            height: 140px;
+            line-height: 140px;
+            font-size: 80px;
+            letter-spacing: -2px; }
+          /* line 109, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > header.banner .hashtag svg {
+            display: block;
+            width: 100%;
+            height: auto; } }
+    /* line 117, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+    body > header.banner + main {
+      background-color: #eeeeee; }
+/* line 123, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+body > main {
+  background-color: #fff;
+  display: block; }
+  /* line 127, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+  body > main > section {
+    max-width: 1088px;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
+    body > main > section::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 130, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+    body > main > section h2 {
+      padding: 24px 24px 0 24px;
+      font-size: 1.875rem; }
+    /* line 135, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+    body > main > section.members {
+      padding-bottom: 1.5em; }
+      /* line 138, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > main > section.members h2 {
+        margin-top: 0; }
+      /* line 142, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > main > section.members .orgs {
+        margin-left: 18px;
+        margin-right: 18px; }
+        /* line 145, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+        body > main > section.members .orgs .member {
+          float: left;
+          background-color: #fff;
+          color: inherit;
+          text-align: center;
+          overflow: hidden;
+          line-height: 40px;
+          padding: 10px;
+          margin: 6px;
+          width: 250px;
+          height: 56px; }
+          /* line 157, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > main > section.members .orgs .member.square {
+            width: 119px;
+            height: 124px; }
+          /* line 163, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > main > section.members .orgs .member > span.logo {
+            display: block;
+            height: 100%;
+            text-indent: -9999px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain; }
+          /* line 173, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > main > section.members .orgs .member.has-role {
+            line-height: 17px;
+            padding-top: 13px; }
+            /* line 177, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+            body > main > section.members .orgs .member.has-role .role {
+              display: block;
+              font-size: 10px;
+              opacity: 0.7;
+              line-height: 1;
+              margin-top: 3px; }
+      /* line 188, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body > main > section.members .individuals {
+        margin: 1.5em; }
+        /* line 191, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+        body > main > section.members .individuals li {
+          display: block;
+          margin-bottom: 0.75em; }
+          /* line 195, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > main > section.members .individuals li a {
+            display: inline-block;
+            color: inherit; }
+            /* line 199, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+            body > main > section.members .individuals li a span {
+              display: block;
+              font-size: 0.8em; }
+        @media (min-width: 53.75em) {
+          /* line 188, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+          body > main > section.members .individuals {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 1.5em;
+            -moz-column-gap: 1.5em;
+            column-gap: 1.5em; } }
+/* line 215, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+body fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0; }
+  /* line 219, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+  body fieldset form {
+    max-width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em; }
+    /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
+    body fieldset form::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media (min-width: 40em) {
+      /* line 219, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+      body fieldset form {
+        padding-top: 3em; } }
+/* line 231, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
+body .site-footer .tjn img {
+  height: 26px; }
+
+/* line 2, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+main > article {
+  max-width: 1088px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em; }
+  /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
+  main > article::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media (min-width: 40em) {
+    /* line 2, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article {
+      font-size: 1.1em; } }
   @media (min-width: 53.75em) {
-    /* line 5, /Users/sam/www/okfn/datafortaxjustice/source/css/_ok-ribbon.scss */
-    #ok-panel-wrapper:not([data-breakpoint*='px']) > .ok-ribbon {
-      margin-top: -3em; } }
+    /* line 2, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article {
+      font-size: 1.2em; } }
+  /* line 14, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article h1, main > article h2, main > article h3, main > article h4 {
+    clear: both; }
+  /* line 18, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article h1 {
+    font-size: 4.5em; }
+    /* line 21, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article h1 + h2 {
+      margin-top: -0.3em; }
+  /* line 26, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article h2 {
+    font-size: 2em; }
+  /* line 30, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article h3 {
+    font-size: 1.8em;
+    position: relative;
+    margin-top: 2em; }
+    /* line 35, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article h3:before {
+      content: '\00a0';
+      width: 0.3em;
+      background-color: #d93621;
+      position: absolute;
+      left: -0.83em; }
+  /* line 44, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article h4 {
+    font-size: 1.5em; }
+  /* line 48, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article h5 {
+    font-size: 1.3em; }
+  /* line 52, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article h6 {
+    font-size: 1.1em; }
+  /* line 56, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article header {
+    position: relative; }
+  /* line 60, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .meta {
+    font-size: 0.9em; }
+    /* line 63, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .meta ul {
+      margin-top: 2em;
+      padding-top: 0.5em;
+      border-top: solid 1px rgba(37, 32, 33, 0.5); }
+      /* line 68, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      main > article .meta ul dd {
+        opacity: 0.8; }
+      @media (min-width: 40em) {
+        /* line 63, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+        main > article .meta ul {
+          max-width: 1088px;
+          margin-left: auto;
+          margin-right: auto; }
+          /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
+          main > article .meta ul::after {
+            clear: both;
+            content: "";
+            display: table; }
+          /* line 75, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+          main > article .meta ul li {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 31.76157%; }
+            /* line 87, /Users/sam/www/okfn/datafortaxjustice/source/css/neat/grid/_span-columns.scss */
+            main > article .meta ul li:last-child {
+              margin-right: 0; } }
+    /* line 81, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .meta .date {
+      position: absolute;
+      top: -2em;
+      left: 0;
+      opacity: 0.8; }
+  /* line 89, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .summary {
+    background-color: #eee;
+    position: relative;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-top: 2.5em; }
+    /* line 96, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .summary h3 {
+      margin-top: 0; }
+    /* line 100, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .summary:before {
+      content: '';
+      width: 1.5em;
+      position: absolute;
+      left: -1.5em;
+      top: 0;
+      bottom: 0;
+      background-color: #eee; }
+    /* line 110, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .summary:after {
+      content: '';
+      width: 1.5em;
+      position: absolute;
+      right: -1.5em;
+      top: 0;
+      bottom: 0;
+      background-color: #eee; }
+    /* line 120, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .summary .logos {
+      margin-top: 1.5em; }
+      /* line 123, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      main > article .summary .logos li {
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        background-color: #fff; }
+        /* line 129, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+        main > article .summary .logos li img {
+          margin-top: 0.3em;
+          max-width: 90%;
+          max-height: 3em; }
+      @media (min-width: 40em) {
+        /* line 120, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+        main > article .summary .logos {
+          display: table;
+          width: 100%;
+          table-layout: fixed; }
+          /* line 141, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+          main > article .summary .logos ul {
+            display: table-row; }
+            /* line 144, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+            main > article .summary .logos ul li {
+              display: table-cell;
+              vertical-align: middle;
+              padding: 0.75em;
+              border-left: solid 10px #eee;
+              border-right: solid 10px #eee; }
+              /* line 151, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+              main > article .summary .logos ul li:first-child {
+                border-left: none; }
+              /* line 154, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+              main > article .summary .logos ul li:last-child {
+                border-right: none; }
+              /* line 158, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+              main > article .summary .logos ul li img {
+                max-height: 3em;
+                max-width: 100%; } }
+  /* line 169, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .toc a {
+    color: inherit; }
+  /* line 173, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .toc li {
+    font-size: 0.95em;
+    font-weight: bold;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em; }
+    /* line 179, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .toc li li {
+      font-weight: normal;
+      margin-left: 1.5em; }
+  /* line 187, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .acknowledgements ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-width: 12em;
+    -moz-column-width: 12em;
+    column-width: 12em;
+    font-size: 0.8em;
+    margin-bottom: 1.5em; }
+    /* line 194, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .acknowledgements ul li {
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid; }
+    /* line 200, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .acknowledgements ul dl {
+      margin-top: 0; }
+      /* line 203, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      main > article .acknowledgements ul dl dt {
+        margin-top: 0; }
+      /* line 206, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      main > article .acknowledgements ul dl dd {
+        opacity: 0.8; }
+  /* line 214, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .content ul,
+  main > article .content ol {
+    margin-left: 1.5em; }
+  /* line 219, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .content ul li {
+    list-style: initial; }
+  /* line 223, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .content ol {
+    list-style: decimal; }
+  /* line 228, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .content .image {
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em; }
+    /* line 233, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .content .image img {
+      display: block; }
+    /* line 237, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .content .image em {
+      display: block;
+      font-size: 0.8em; }
+    @media (min-width: 40em) {
+      /* line 228, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      main > article .content .image {
+        width: 50%;
+        float: left;
+        margin: 0.75em 1.5em 1.5em -1.5em; } }
+    @media (min-width: 53.75em) {
+      /* line 248, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      main > article .content .image.fullwidth {
+        float: none;
+        width: auto;
+        margin-left: -1.5em;
+        margin-right: -1.5em; } }
+  /* line 259, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .content .user-stories p {
+    color: #999; }
+    /* line 262, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .content .user-stories p strong {
+      color: #006498; }
+    /* line 265, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .content .user-stories p em {
+      color: #252021;
+      font-style: normal; }
+    /* line 269, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .content .user-stories p b {
+      color: #527f48;
+      font-weight: normal; }
+  /* line 277, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  main > article .footnotes {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-top: solid 1px rgba(37, 32, 33, 0.5);
+    border-bottom: solid 1px rgba(37, 32, 33, 0.5);
+    clear: both; }
+    /* line 286, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    main > article .footnotes li {
+      font-size: 0.7em;
+      font-family: 'Source Code Pro', monospace; }
+      /* line 290, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      main > article .footnotes li p {
+        font-family: Cabin, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+/* line 301, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields .toggle-data {
+  display: none; }
+  /* line 304, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .js .what-do-they-pay .comparison-of-data-fields .toggle-data {
+    border: solid 2px #ddd;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: #252021;
+    padding: 0.375em 1.5em 0.375em 3.5em;
+    position: relative;
+    cursor: pointer; }
+    @media (min-width: 40em) {
+      /* line 304, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      .js .what-do-they-pay .comparison-of-data-fields .toggle-data {
+        float: right; } }
+    /* line 317, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .js .what-do-they-pay .comparison-of-data-fields .toggle-data:before {
+      content: '';
+      background-color: #ddd;
+      display: block;
+      width: 2em;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0; }
+    /* line 328, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .js .what-do-they-pay .comparison-of-data-fields .toggle-data.off {
+      border-color: #006498;
+      padding: 0.375em 3.5em 0.375em 1.5em; }
+      /* line 332, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+      .js .what-do-they-pay .comparison-of-data-fields .toggle-data.off:before {
+        background-color: #006498;
+        left: auto;
+        right: 0; }
+    /* line 339, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .js .what-do-they-pay .comparison-of-data-fields .toggle-data.active {
+      display: block; }
+/* line 346, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table tbody th {
+  width: 28%; }
+/* line 349, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table tbody td {
+  width: 12%;
+  text-align: center;
+  background-color: #d93621;
+  line-height: 1.2;
+  height: 4.5em;
+  padding-top: 0.375em;
+  padding-bottom: 0.375em; }
+  /* line 358, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table tbody td.ideal {
+    background-color: inherit; }
+    /* line 360, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .what-do-they-pay .comparison-of-data-fields table tbody td.ideal svg {
+      fill: #527f48; }
+  /* line 365, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+  .what-do-they-pay .comparison-of-data-fields table tbody td.related {
+    background-color: inherit; }
+    /* line 367, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+    .what-do-they-pay .comparison-of-data-fields table tbody td.related svg {
+      fill: #F6CD11; }
+/* line 373, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table tbody svg {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  padding-top: 0.3em; }
+/* line 380, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table tbody span {
+  display: none;
+  font-size: 0.8em; }
+/* line 390, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table.detailed .ideal svg,
+.what-do-they-pay .comparison-of-data-fields table.detailed .related svg,
+.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal svg,
+.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related svg {
+  display: none; }
+/* line 393, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table.detailed .ideal span,
+.what-do-they-pay .comparison-of-data-fields table.detailed .related span,
+.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal span,
+.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related span {
+  display: block; }
+/* line 397, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table.detailed .ideal,
+.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .ideal {
+  background: #527f48;
+  color: #fff; }
+/* line 401, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table.detailed .related,
+.what-do-they-pay .comparison-of-data-fields table tbody tr:hover .related {
+  background: #F6CD11; }
+/* line 406, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table tbody tr:hover th {
+  background-color: #ddd; }
+/* line 411, /Users/sam/www/okfn/datafortaxjustice/source/css/_article.scss */
+.what-do-they-pay .comparison-of-data-fields table.detailed tbody tr:hover th {
+  background-color: inherit; }
 
 /* footer */
 /* line 7, /Users/sam/www/okfn/datafortaxjustice/source/css/_ok-footer.scss */
@@ -752,7 +1376,7 @@ html {
   /* line 30, /Users/sam/www/okfn/datafortaxjustice/source/css/_ok-footer.scss */
   .site-footer .wrapper {
     padding: 1.5em;
-    max-width: 68em;
+    max-width: 1088px;
     margin-left: auto;
     margin-right: auto; }
     /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
@@ -874,229 +1498,6 @@ html {
       /* line 147, /Users/sam/www/okfn/datafortaxjustice/source/css/_ok-footer.scss */
       .site-footer .attribution {
         display: inline; } }
-
-/* line 8, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-html {
-  overflow-x: hidden; }
-
-/* line 13, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-body > header {
-  background-color: #d93621;
-  color: #fff;
-  padding-top: 1.5em; }
-  /* line 18, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-  body > header a {
-    color: inherit; }
-  /* line 22, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-  body > header > section {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative; }
-    /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
-    body > header > section::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media (min-width: 53.75em) {
-      /* line 22, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body > header > section {
-        background-image: url(../img/man.svg);
-        background-repeat: no-repeat;
-        background-size: 31.7616% auto;
-        background-position: 1.5em 140px; } }
-    /* line 33, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-    body > header > section .hashtag {
-      padding: 0 1.5em; }
-      /* line 36, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body > header > section .hashtag a {
-        color: #252021;
-        background-color: #fff;
-        padding: 0.75em;
-        display: inline-block; }
-      /* line 43, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body > header > section .hashtag svg {
-        display: none; }
-      @media (min-width: 53.75em) {
-        /* line 33, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-        body > header > section .hashtag {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          padding: 0;
-          position: relative;
-          left: 1.5em; }
-          /* line 87, /Users/sam/www/okfn/datafortaxjustice/source/css/neat/grid/_span-columns.scss */
-          body > header > section .hashtag:last-child {
-            margin-right: 0; }
-          /* line 53, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > header > section .hashtag a {
-            display: block;
-            text-align: center;
-            padding: 0 10px;
-            height: 140px;
-            line-height: 140px;
-            font-size: 48px;
-            font-weight: bold; }
-          /* line 62, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > header > section .hashtag svg {
-            display: block;
-            width: 100%;
-            height: auto; } }
-      @media (min-width: 53.75em) {
-        /* line 70, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-        body > header > section .hashtag a {
-          font-size: 68px; } }
-    /* line 76, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-    body > header > section .intro {
-      padding: 1.5em; }
-      /* line 79, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body > header > section .intro h1 {
-        font-size: 50px;
-        margin-bottom: 0.2em; }
-      /* line 84, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body > header > section .intro > a {
-        background-color: #252021;
-        text-transform: uppercase; }
-      @media (min-width: 53.75em) {
-        /* line 76, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-        body > header > section .intro {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 65.88078%;
-          height: 380px;
-          display: table; }
-          /* line 87, /Users/sam/www/okfn/datafortaxjustice/source/css/neat/grid/_span-columns.scss */
-          body > header > section .intro:last-child {
-            margin-right: 0; }
-          /* line 95, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > header > section .intro > div {
-            display: table-cell;
-            vertical-align: middle; }
-          /* line 100, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > header > section .intro p {
-            font-size: 1.2em; }
-          /* line 104, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > header > section .intro > a {
-            font-size: 1.2em;
-            margin-top: 0.8em; } }
-      @media (min-width: 53.75em) {
-        /* line 76, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-        body > header > section .intro {
-          padding-left: 3em; } }
-  @media (min-width: 53.75em) {
-    /* line 13, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-    body > header {
-      padding-top: 3em; } }
-/* line 121, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-body > main {
-  background-color: #eeeeee;
-  display: block; }
-  /* line 125, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-  body > main > section {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
-    body > main > section::after {
-      clear: both;
-      content: "";
-      display: table; }
-    /* line 128, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-    body > main > section h2 {
-      padding: 24px 24px 0 24px;
-      font-size: 1.875rem; }
-    /* line 133, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-    body > main > section.members {
-      padding-bottom: 1.5em; }
-      /* line 136, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body > main > section.members .orgs {
-        margin-left: 18px;
-        margin-right: 18px; }
-        /* line 139, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-        body > main > section.members .orgs .member {
-          float: left;
-          background-color: #fff;
-          color: inherit;
-          text-align: center;
-          overflow: hidden;
-          line-height: 40px;
-          padding: 10px;
-          margin: 6px;
-          width: 250px;
-          height: 56px; }
-          /* line 151, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > main > section.members .orgs .member.square {
-            width: 119px;
-            height: 124px; }
-          /* line 157, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > main > section.members .orgs .member > span.logo {
-            display: block;
-            height: 100%;
-            text-indent: -9999px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain; }
-          /* line 167, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > main > section.members .orgs .member.has-role {
-            line-height: 17px;
-            padding-top: 13px; }
-            /* line 171, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-            body > main > section.members .orgs .member.has-role .role {
-              display: block;
-              font-size: 10px;
-              opacity: 0.7;
-              line-height: 1;
-              margin-top: 3px; }
-      /* line 182, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body > main > section.members .individuals {
-        margin: 1.5em; }
-        /* line 185, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-        body > main > section.members .individuals li {
-          display: block;
-          margin-bottom: 0.75em; }
-          /* line 189, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > main > section.members .individuals li a {
-            display: inline-block;
-            color: inherit; }
-            /* line 193, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-            body > main > section.members .individuals li a span {
-              display: block;
-              font-size: 0.8em; }
-        @media (min-width: 53.75em) {
-          /* line 182, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-          body > main > section.members .individuals {
-            -webkit-column-count: 3;
-            -moz-column-count: 3;
-            column-count: 3;
-            -webkit-column-gap: 1.5em;
-            -moz-column-gap: 1.5em;
-            column-gap: 1.5em; } }
-/* line 209, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-body fieldset {
-  margin: 0;
-  border: 0;
-  padding: 0; }
-  /* line 213, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-  body fieldset form {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em; }
-    /* line 9, /Users/sam/www/okfn/datafortaxjustice/source/css/bourbon/addons/_clearfix.scss */
-    body fieldset form::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media (min-width: 40em) {
-      /* line 213, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-      body fieldset form {
-        padding-top: 3em; } }
-/* line 225, /Users/sam/www/okfn/datafortaxjustice/source/css/main.css.scss */
-body .site-footer .tjn img {
-  height: 26px; }
 
 /* ==========================================================================
    Print styles.
