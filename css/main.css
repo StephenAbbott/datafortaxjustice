@@ -73,7 +73,7 @@ html {
 /* line 80, /Users/sam/www/okfn/datafortaxjustice/source/css/_normalize.scss */
 html,
 button,
-body > header > section .intro > a,
+body > header > section .intro > div > a,
 input,
 select,
 textarea {
@@ -354,7 +354,7 @@ legend {
  * 3. Improves appearance and consistency in all browsers.
  */
 /* line 388, /Users/sam/www/okfn/datafortaxjustice/source/css/_normalize.scss */
-button, body > header > section .intro > a,
+button, body > header > section .intro > div > a,
 input,
 select,
 textarea {
@@ -372,7 +372,7 @@ textarea {
  * the UA stylesheet.
  */
 /* line 403, /Users/sam/www/okfn/datafortaxjustice/source/css/_normalize.scss */
-button, body > header > section .intro > a,
+button, body > header > section .intro > div > a,
 input {
   line-height: normal; }
 
@@ -386,7 +386,7 @@ input {
  *    Known issue: inner spacing remains in IE 6.
  */
 /* line 418, /Users/sam/www/okfn/datafortaxjustice/source/css/_normalize.scss */
-button, body > header > section .intro > a,
+button, body > header > section .intro > div > a,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -401,7 +401,7 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 /* line 431, /Users/sam/www/okfn/datafortaxjustice/source/css/_normalize.scss */
-button[disabled], body > header > section .intro > a[disabled],
+button[disabled], body > header > section .intro > div > a[disabled],
 input[disabled] {
   cursor: default; }
 
@@ -450,7 +450,7 @@ input[type="search"]::-webkit-search-decoration {
  * Removes inner padding and border in Firefox 3+.
  */
 /* line 478, /Users/sam/www/okfn/datafortaxjustice/source/css/_normalize.scss */
-button::-moz-focus-inner, body > header > section .intro > a::-moz-focus-inner,
+button::-moz-focus-inner, body > header > section .intro > div > a::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -480,7 +480,7 @@ table {
 /* line 1, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_buttons.scss */
 input[type="button"], input[type="reset"], input[type="submit"],
 button,
-body > header > section .intro > a {
+body > header > section .intro > div > a {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -505,15 +505,15 @@ body > header > section .intro > a {
   /* line 21, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_buttons.scss */
   input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
   button:hover,
-  body > header > section .intro > a:hover,
+  body > header > section .intro > div > a:hover,
   button:focus,
-  body > header > section .intro > a:focus {
+  body > header > section .intro > div > a:focus {
     background-color: #972517;
     color: #fff; }
   /* line 27, /Users/sam/www/okfn/datafortaxjustice/source/css/base/_buttons.scss */
   input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
   button:disabled,
-  body > header > section .intro > a:disabled {
+  body > header > section .intro > div > a:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
@@ -809,7 +809,7 @@ body > header {
         margin-top: 0;
         margin-bottom: 0.2em; }
       /* line 56, /Users/sam/www/okfn/datafortaxjustice/source/css/_home.scss */
-      body > header > section .intro > a {
+      body > header > section .intro > div > a {
         background-color: #252021;
         text-transform: uppercase; }
       @media (min-width: 53.75em) {
